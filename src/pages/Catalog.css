@@ -1,0 +1,68 @@
+/* Catalog Layout Styles */
+.catalog {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.catalog-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Quantity Picker Styles */
+.quantity-picker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.quantity-picker button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quantity-picker button:first-child {
+  background-color: #e5e7eb;
+}
+
+.quantity-picker button:first-child:hover:not(:disabled) {
+  background-color: #d1d5db;
+}
+
+.quantity-picker button:last-child {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.quantity-picker button:last-child:hover {
+  background-color: #2563eb;
+}
+
+.quantity-picker button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity-display {
+  font-size: 1.25rem;
+  font-weight: 600;
+  min-width: 2rem;
+  text-align: center;
+}
