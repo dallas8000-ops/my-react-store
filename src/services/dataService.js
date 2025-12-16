@@ -1,24 +1,45 @@
 const catalog = [
   {
-    title: "webcam",
+    id: 1,
+    title: "Ultimate Keyboard",
+    category: "input",
+    price: 120.00,
+    image: "keyboard.jpg"
+  },
+  {
+    id: 2,
+    title: "Ergonomic Mouse",
+    category: "input",
+    price: 45.50,
+    image: "mouse.jpg"
+  },
+  {
+    id: 3,
+    title: "4K Gaming Monitor",
+    category: "display",
+    price: 399.99,
+    image: "monitor.jpg"
+  },
+  {
+    id: 4,
+    title: "HD Webcam Pro",
     category: "camera",
-    price: 20.00,
-    image: "webcam.png",
-    id: "1" // unique
+    price: 75.00,
+    image: "webcam.png"
   },
   {
-    title: "headphone",
+    id: 5,
+    title: "Noise Cancelling Headphones",
     category: "audio",
-    price: 50.00,
-    image: "headphone.png",
-    id: "2" // unique
+    price: 199.00,
+    image: "headset.png"
   },
   {
-    title: "smartwatch",
-    category: "wearable",
-    price: 80.00,
-    image: "smartwatch.png",
-    id: "3" // unique
+    id: 6,
+    title: "High Performance Memory",
+    category: "hardware",
+    price: 89.99,
+    image: "memory.png"
   }
 ];
 
@@ -27,3 +48,7 @@ class DataService {
     return catalog;
   }
 }
+
+// Export an instance of the service
+const dataService = new DataService();
+export default dataService;
